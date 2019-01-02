@@ -1,0 +1,10 @@
+extends layout
+
+block title
+  title #{collection} - stack#{id}
+
+  block contnet
+    h1 #{collection} - stack#{id}
+    ul
+      each val, i in cards
+       li.site #{val.site1}

@@ -1,0 +1,22 @@
+extends layout
+
+block title
+  title home
+
+
+block content
+  div страница должна зависить от какой-либо коллекции
+  h1 home
+
+  form(action="/" id="card")
+    div.field
+      label(for="site1") введите вопрос:
+      input(type="text" id="word" name="site1") 
+    div.field
+      label(for="site2") введите ответ:
+      input(type="text" id="trans" name="site2")
+    div.field
+      label(for="pile") стопка:
+      input(type="text" id="pile" name="pile" value="1")
+
+    button.add-button(type="submit") go go ...

@@ -1,0 +1,12 @@
+{
+  "alex": {
+    "age": 37,
+    "live": "Germany",
+    "langs": ["javascript", "php", "C", "C#"]
+  },
+  "boris": {
+    "age": 35,
+    "live": "USA",
+    "langs": ["javascript", "rubi", "C", "C++"]
+  }
+}

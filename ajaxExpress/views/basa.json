@@ -1,0 +1,11 @@
+{
+  "person": {
+    "name": "alex",
+    "lastname": "kochetov",
+    "age": 37
+  },
+  "job": {
+    "name": "programmer",
+    "sellary": 5000
+  }
+}

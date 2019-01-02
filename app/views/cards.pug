@@ -1,0 +1,9 @@
+extends layout
+block title
+  title pile - #{id} 
+block content
+  h1 pile #{id}
+  ul
+  each val, i in cards
+    li.site #{val.site1}
+  script console.log(id);

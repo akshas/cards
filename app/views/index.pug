@@ -1,0 +1,27 @@
+extends layout
+
+block title
+  title home
+
+
+block content
+  h1 страница создания коллекций
+
+  h2 список коллекций
+  ul
+  each val, i in collections
+    li.collection 
+      a(href="collection/" + val.collectionName ) #{val.collectionName}
+      form.update-collection(method="post" action="/" id=val._id)
+        button.button.changed.rename(data-rename-id=val._id type="submit")
+          img(src="/assets/img/update-icon.png", alt="update collection" )
+        button.button.changed.delete(data-delete-id=val._id type="button") 
+          img(src="/assets/img/delete-icon.png", alt="delete collection" )
+  hr
+  h2 созданиe коллекции
+  form(action="/" id="create-collection")
+    div.field
+      label(for="CollectionName") введите название коллекции:
+      input(type="text" id="collection" name="CollectionName") 
+
+    button.add-button(type="submit") сохранить

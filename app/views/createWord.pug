@@ -1,0 +1,27 @@
+extends layout
+block title
+  title #{name}
+block content
+  h1 #{name}
+
+  form(action="/collection/#{name}"  id="create-word")
+    div.field
+      label(for="CollectionName") слово:
+      input(type="text" id="word" name="site1") 
+    div.field
+      label(for="CollectionName") введите перевод:
+      input(type="text" id="trans" name="site2") 
+
+    button.add-button(type="submit") сохранить
+  //- h2 #{collection.cards[0].site1}
+  .piles
+    .pile
+      a(href="/" + name + "/pile1") pile-1
+    .pile
+      a(href="/" + name + "/pile2") pile-2
+    .pile
+      a(href="/" + name + "/pile3") pile-3
+    .pile
+      a(href="/" + name + "/pile4") pile-4
+    .pile
+      a(href="/" + name + "/pile5") pile-5

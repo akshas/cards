@@ -1,0 +1,59 @@
+body{
+  background-color: #ccc;
+}
+
+.wrapper{
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 40px;
+}
+h1{
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #444;
+}
+.piles{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  .pile{
+    min-width: 200px;
+    height: 350px;
+    border: 1px solid rgb(85, 24, 61);
+    position: relative;
+    a{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+/**
+ *  форма
+ */
+form{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+input[type=text]{
+  border-radius: 6px;
+  outline: none;
+  height: 40px;
+  padding: 0 15px;
+}
+button{
+  padding: 10px 20px;
+  margin-top: 25px;
+  
+}
