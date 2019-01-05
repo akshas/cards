@@ -1,5 +1,5 @@
 body {
-  background-color: #B0E0E6;
+  background-color: #DEB887;
 }
 
 .wrapper {
@@ -51,9 +51,18 @@ input {
 li.collection {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  height: 30px;
 
   a {
     display: block;
+    font-size: 15px;
+    color: #222;
+    text-decoration: none;
+
+    &:hover {
+      color: #555;
+    }
   }
 }
 
@@ -62,6 +71,7 @@ form#create-collection {
 }
 
 form.update-collection {
+
   input {
     background-color: transparent;
     width: auto;
@@ -81,7 +91,7 @@ form.update-collection {
 //   padding: 0 15px;
 // }
 
-button.changed {
+button.modificator {
   margin-left: 10px;
   height: 20px;
   width: 20px;
